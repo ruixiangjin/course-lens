@@ -134,3 +134,8 @@ Development will continue within the same product boundaries:
 - a desktop shell (Electron is not implemented).
 
 The intended dependency direction is Source Connectors → Resource Catalog → Knowledge Service → Evidence → Study Controller → Model generation. DSH hosts that product flow but does not own Monash course logic.
+
+## License
+
+Original Monash Study Agent code and documentation are available under the [MIT License](LICENSE).
+The vendored [DeepSeek Harness](vendor/deepseek-harness/LICENSE) and its [third-party components](vendor/deepseek-harness/THIRD_PARTY_NOTICES.md) remain under their respective licenses.
