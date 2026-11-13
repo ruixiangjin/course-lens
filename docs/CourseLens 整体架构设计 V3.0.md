@@ -1,14 +1,14 @@
-# Monash Study Agent 整体架构设计 V3.0
+# CourseLens 整体架构设计 V3.0
 
-> 本文档负责 Monash Study Agent 的整体架构、模块关系、技术栈与 Resume MVP 路线。
+> 本文档负责 CourseLens 的整体架构、模块关系、技术栈与 Resume MVP 路线。
 >
-> Long-term Memory 的详细设计，包括 Memory 类型、Scope、写入与更新规则、Recall、生命周期、SQLite Schema 和测试标准，以 [Memory 设计补充](./Monash_Study_Agent_Memory_设计补充.md) 为准。
+> Long-term Memory 的详细设计，包括 Memory 类型、Scope、写入与更新规则、Recall、生命周期、SQLite Schema 和测试标准，以 [Memory 设计补充](./CourseLens_Memory_设计补充.md) 为准。
 >
 > **文档状态：设计基线与路线图。** 本文中的“当前开发目标”“第一阶段”和 Resume MVP 是设计时的计划，不是现行代码清单；实现状态以 [Codebase Reference](./PROJECT_CODEBASE_REFERENCE.md) 的最新验证快照和工作区说明为准。已实现的 Web UI、运行路径、验证结果和未完成边界请查 Codebase Reference 与 [UI Implementation Reference](./UI_IMPLEMENTATION_REFERENCE.md)。
 
 ## 1. 项目定位
 
-Monash Study Agent 是一个围绕大学课程资料构建的本地优先学习 Agent。
+CourseLens 是一个围绕大学课程资料构建的本地优先学习 Agent。
 
 当前开发目标是先完成一个：
 
@@ -224,7 +224,7 @@ DeepSeek
 Final Answer
 ```
 
-Monash Study Agent 在 Harness 之上增加：
+CourseLens 在 Harness 之上增加：
 
 ```text
 课程知识
@@ -586,7 +586,7 @@ topic
 详细的 Memory 类型、Scope、Canonical State、生命周期与写入规则统一参考：
 
 ```text
-[Memory 设计补充](./Monash_Study_Agent_Memory_设计补充.md)
+[Memory 设计补充](./CourseLens_Memory_设计补充.md)
 ```
 
 ------
@@ -734,7 +734,7 @@ forget(...)
 具体 Schema、UPDATE、RESOLVE、ARCHIVE、DELETE 和 embedding 生命周期参考：
 
 ```text
-[Memory 设计补充](./Monash_Study_Agent_Memory_设计补充.md)
+[Memory 设计补充](./CourseLens_Memory_设计补充.md)
 ```
 
 ------
@@ -1350,7 +1350,7 @@ Memory content 与 embedding 保持一致
 Memory 的详细 Schema 与事务规则统一参考：
 
 ```text
-[Memory 设计补充](./Monash_Study_Agent_Memory_设计补充.md)
+[Memory 设计补充](./CourseLens_Memory_设计补充.md)
 ```
 
 ------
@@ -1509,7 +1509,7 @@ Subagent
 Model Runtime
 ```
 
-## Monash Study Agent
+## CourseLens
 
 负责：
 
@@ -1856,7 +1856,7 @@ Evidence
 V3.0 可以概括为：
 
 ```text
-                    Monash Study Agent
+                    CourseLens
                            │
                            ▼
                          UI

@@ -23,7 +23,7 @@ test('Main Study Agent prompt keeps version, course context, and query invariant
     courseContext: { courseCode: 'FIT2109', week: 4, topic: 'Git' },
   })
   assert.equal(MAIN_STUDY_AGENT_PROMPT_VERSION, 'main-study-agent-v5')
-  assert.match(rendered.systemPrompt, /Monash Study Agent/)
+  assert.match(rendered.systemPrompt, /CourseLens/)
   assert.match(rendered.runtimeContext, /courseCode: FIT2109/)
   assert.match(rendered.runtimeContext, /week: 4/)
   assert.match(rendered.runtimeContext, /topic: Git/)

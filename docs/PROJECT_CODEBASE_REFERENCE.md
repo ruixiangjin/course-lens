@@ -1,12 +1,12 @@
-# Monash Study Agent — Codebase Reference
+# CourseLens — Codebase Reference
 
 This document describes the actual implementation of the repository.
 
 Architecture intent:
-→ [Monash Study Agent 整体架构设计 V3.0](./Monash%20Study%20Agent%20整体架构设计%20V3.0.md)
+→ [CourseLens 整体架构设计 V3.0](./CourseLens%20整体架构设计%20V3.0.md)
 
 Memory design intent:
-→ [Monash Study Agent — Memory 设计补充](./Monash_Study_Agent_Memory_设计补充.md)
+→ [CourseLens — Memory 设计补充](./CourseLens_Memory_设计补充.md)
 
 Actual implementation:
 → this document
@@ -198,8 +198,8 @@ monash-study-agent/
 │   ├── architecture.md        Concise implementation architecture notes
 │   ├── identity-contract.md   Stable identity algorithms
 │   ├── Commit Message Guidelines.md  Commit subject/body convention
-│   ├── Monash Study Agent 整体架构设计 V3.0.md  Overall design intent
-│   └── Monash_Study_Agent_Memory_设计补充.md  Memory design intent
+│   ├── CourseLens 整体架构设计 V3.0.md  Overall design intent
+│   └── CourseLens_Memory_设计补充.md  Memory design intent
 ├── packages/
 │   ├── shared-types/          Shared Resource, Evidence, Memory, and Study DTOs
 │   ├── runtime-database/      SQLite connection and migrations
@@ -852,7 +852,7 @@ Semantic score uses normalized cosine similarity over BGE-M3 vectors; keyword sc
 
 ### Hybrid formation boundary
 
-The same `MemoryService` instance now serves two write triggers. `manage_memory` calls `manage()` during the Harness loop; the Controller calls `observe()` after a successful completed turn. Both converge on the same Resolver, Lifecycle Manager, Store, embedding provider, and event history. The trigger and timing differ; the lifecycle operation set is shared. See [Memory Design Supplement](./Monash_Study_Agent_Memory_设计补充.md) for intended policy.
+The same `MemoryService` instance now serves two write triggers. `manage_memory` calls `manage()` during the Harness loop; the Controller calls `observe()` after a successful completed turn. Both converge on the same Resolver, Lifecycle Manager, Store, embedding provider, and event history. The trigger and timing differ; the lifecycle operation set is shared. See [Memory Design Supplement](./CourseLens_Memory_设计补充.md) for intended policy.
 
 ## 12. Knowledge / RAG Architecture
 

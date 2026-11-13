@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "monash-study://contracts/lightrag-worker.v1.schema.json",
-  "title": "Monash Study Agent LightRAG worker protocol v1",
+  "title": "CourseLens LightRAG worker protocol v1",
   "type": "object",
   "oneOf": [
     { "$ref": "#/$defs/request" },

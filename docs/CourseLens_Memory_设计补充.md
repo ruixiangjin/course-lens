@@ -1,6 +1,6 @@
-# Monash Study Agent — Memory 设计补充
+# CourseLens — Memory 设计补充
 
-> 本文档是 [Monash Study Agent 整体架构设计 V3.0](./Monash%20Study%20Agent%20整体架构设计%20V3.0.md) 的 **Long-term Memory 专项补充**。
+> 本文档是 [CourseLens 整体架构设计 V3.0](./CourseLens%20整体架构设计%20V3.0.md) 的 **Long-term Memory 专项补充**。
 > V3.0 继续作为项目整体架构、模块关系、开发顺序与 Resume MVP 的主设计文档。
 > 本文档只细化 Memory Layer 的职责、类型、写入、更新、检索、生命周期与测试标准。
 >
@@ -12,7 +12,7 @@
 
 # 1. Memory 在整体架构中的位置
 
-Monash Study Agent 的状态分成四个 Owner：
+CourseLens 的状态分成四个 Owner：
 
 ```text
 DeepSeek Harness
@@ -105,7 +105,7 @@ Decision procedures
 Model parameters
 ```
 
-Monash Study Agent 当前已经拥有这部分静态 Procedure。
+CourseLens 当前已经拥有这部分静态 Procedure。
 
 Memory Layer 新增的重点是：
 
@@ -1610,7 +1610,7 @@ Electron
 
 ```text
 整体系统架构
-→ [Monash Study Agent 整体架构设计 V3.0](./Monash%20Study%20Agent%20整体架构设计%20V3.0.md)
+→ [CourseLens 整体架构设计 V3.0](./CourseLens%20整体架构设计%20V3.0.md)
 
 Long-term Memory 详细设计
 → 本文档

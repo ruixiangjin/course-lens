@@ -1,7 +1,7 @@
 [project]
 name = "monash-study-knowledge-service"
 version = "0.1.0"
-description = "Document conversion runtime for Monash Study Agent"
+description = "Document conversion runtime for CourseLens"
 requires-python = ">=3.12,<3.14"
 dependencies = [
   "docling==2.129.0; sys_platform != 'darwin'",

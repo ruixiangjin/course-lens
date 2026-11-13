@@ -157,7 +157,7 @@ export function formatRuntimeConfiguration(config: LoadedRuntimeConfig, runtime 
     ['memoryEmbeddingWorker', config.provenance.memoryEmbeddingWorker],
   ]
   return [
-    'Monash Study Agent runtime configuration',
+    'CourseLens runtime configuration',
     `runtime: ${runtime}`,
     ...entries.flatMap(([name, path]) => [`${name}:`, `  value: ${path.value}`, `  source: ${path.source}`]),
   ].join('\n')

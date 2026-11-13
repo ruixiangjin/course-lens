@@ -1,6 +1,6 @@
 # Product architecture
 
-Monash Study Agent is the complete product. DeepSeek Harness is its internal
+CourseLens is the complete product. DeepSeek Harness is its internal
 Agent Runtime. The product keeps the existing `study-application` composition
 root; this stabilization does not add a second bootstrap package or move the
 existing package boundaries.

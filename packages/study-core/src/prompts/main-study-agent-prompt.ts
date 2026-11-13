@@ -4,7 +4,7 @@ import type { StudentContext } from '../agent-runtime.js'
 export const MAIN_STUDY_AGENT_PROMPT_VERSION = 'main-study-agent-v5'
 
 /** Stable Main Agent instructions for the tool-enabled Hybrid Memory runtime. */
-export const MAIN_STUDY_AGENT_SYSTEM_PROMPT = `你是 Monash Study Agent。
+export const MAIN_STUDY_AGENT_SYSTEM_PROMPT = `你是 CourseLens。
 
 你负责帮助学生理解和学习当前大学课程。
 
@@ -40,7 +40,7 @@ Hard Delete 只用于用户明确的 delete / forget 意图。执行 DELETE 时�
 `
 
 /** Fallback prompt for callers that intentionally provide no Round 2 tool services. */
-export const MAIN_STUDY_AGENT_NO_TOOLS_SYSTEM_PROMPT = `你是 Monash Study Agent。
+export const MAIN_STUDY_AGENT_NO_TOOLS_SYSTEM_PROMPT = `你是 CourseLens。
 
 你负责帮助学生理解和学习当前大学课程。
 

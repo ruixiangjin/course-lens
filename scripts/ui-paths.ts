@@ -35,7 +35,7 @@ export async function verifyUiPaths(paths: UiPaths): Promise<void> {
   await requiredFile(paths.runtimeConfig, 'runtime config')
   await requiredFile(paths.resourceManifest, 'resource manifest', 'Configure config/sources.local.json and run pnpm scan to create it locally.')
   await requiredFile(paths.runtimePatch, 'single-runtime DSH patch')
-  await requiredFile(join(paths.presetRoot, 'monash-study-agent/agent.cordis.yml'), 'Monash Study Agent preset')
+  await requiredFile(join(paths.presetRoot, 'monash-study-agent/agent.cordis.yml'), 'CourseLens preset')
   await requiredFile(join(paths.dshUiPluginRuntime, 'lib/index.js'), 'repository-local DSH UI runtime')
   await requiredFile(join(paths.dshUiPluginRuntime, 'package.json'), 'repository-local DSH UI runtime manifest')
 }

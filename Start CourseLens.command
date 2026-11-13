@@ -6,7 +6,7 @@ project_root="${0:A:h}"
 
 fail() {
   print -u2 ""
-  print -u2 "Monash Study Agent could not start: $1"
+  print -u2 "CourseLens could not start: $1"
   print -u2 "Install or restore development dependencies manually, then run this launcher again."
   read -r "?Press Return to close this window..."
   exit 1
@@ -19,13 +19,13 @@ command -v pnpm >/dev/null 2>&1 || fail "pnpm is not available on PATH."
 [[ -d node_modules ]] || fail "node_modules is missing."
 [[ -e node_modules/tsx ]] || fail "the local development dependencies are incomplete (tsx is missing)."
 
-print "Starting Monash Study Agent from $project_root"
+print "Starting CourseLens from $project_root"
 pnpm ui
 status=$?
 
 if (( status != 0 )); then
   print -u2 ""
-  print -u2 "Monash Study Agent stopped with exit code $status."
+  print -u2 "CourseLens stopped with exit code $status."
   read -r "?Press Return to close this window..."
 fi
 

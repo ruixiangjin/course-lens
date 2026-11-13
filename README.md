@@ -1,10 +1,10 @@
-# Monash Study Agent
+# CourseLens
 
 [English](#english) · [简体中文](#简体中文) · [MIT License](LICENSE)
 
 ## English
 
-Monash Study Agent is a study assistant for Monash courses. It organises course materials downloaded from Ed and Moodle, lets you ask questions by course, and shows the sources retrieved during the conversation.
+CourseLens is a study assistant for Monash courses. It organises course materials downloaded from Ed and Moodle, lets you ask questions by course, and shows the sources retrieved during the conversation.
 
 ### Features
 
@@ -39,7 +39,7 @@ Open the web interface and select your course to start a conversation. Course fi
 
 ## 简体中文
 
-Monash Study Agent 是一款面向 Monash 课程的学习助手。它整理从 Ed 和 Moodle 下载的课程资料，支持按课程提问，并在对话旁显示检索到的资料来源。
+CourseLens 是一款面向 Monash 课程的学习助手。它整理从 Ed 和 Moodle 下载的课程资料，支持按课程提问，并在对话旁显示检索到的资料来源。
 
 ### 主要功能
 
@@ -74,6 +74,6 @@ pnpm ui
 
 ## License · 许可证
 
-Monash Study Agent’s original code and documentation are available under the [MIT License](LICENSE). [DeepSeek Harness](vendor/deepseek-harness/LICENSE) and its [third-party components](vendor/deepseek-harness/THIRD_PARTY_NOTICES.md) retain their respective licenses.
+CourseLens’s original code and documentation are available under the [MIT License](LICENSE). [DeepSeek Harness](vendor/deepseek-harness/LICENSE) and its [third-party components](vendor/deepseek-harness/THIRD_PARTY_NOTICES.md) retain their respective licenses.
 
-Monash Study Agent 的原创代码和文档采用 [MIT 许可证](LICENSE)。[DeepSeek Harness](vendor/deepseek-harness/LICENSE) 及其[第三方组件](vendor/deepseek-harness/THIRD_PARTY_NOTICES.md)沿用各自的许可证。
+CourseLens 的原创代码和文档采用 [MIT 许可证](LICENSE)。[DeepSeek Harness](vendor/deepseek-harness/LICENSE) 及其[第三方组件](vendor/deepseek-harness/THIRD_PARTY_NOTICES.md)沿用各自的许可证。

@@ -128,7 +128,7 @@ export async function apply(ctx: Context): Promise<() => Promise<void>> {
         ({ size }: { readonly size?: number }) => createElement(IconListPenOutline16, { size }),
         (props: PropsRuntime<'main'>) => createElement(MonashStudyPage, { ...props, client }),
         ({ size }: { readonly size?: number }) => createElement(IconListPenOutline16, { size: size ?? 24 }),
-        () => createElement('span', { className: 'monash-study-brand-name' }, 'Monash Study Agent'),
+        () => createElement('span', { className: 'monash-study-brand-name' }, 'CourseLens'),
       )
       scope.layout.selectPanel(PANEL_ID)
       return () => {
@@ -298,7 +298,7 @@ function MonashStudyPage({ client }: { client: StudyClient } & PropsRuntime<'mai
     createElement('aside', { className: 'monash-study-courses' },
       createElement('div', { className: 'monash-study-product-heading' },
         createElement(IconListPenOutline16, { size: 20 }),
-        createElement('span', null, 'Monash Study Agent'),
+        createElement('span', null, 'CourseLens'),
       ),
       createElement('div', { className: 'monash-study-section-title' }, 'Courses'),
       loadingCourses ? createElement('div', { className: 'monash-study-muted' }, 'Loading courses…') : null,
@@ -331,7 +331,7 @@ function MonashStudyPage({ client }: { client: StudyClient } & PropsRuntime<'mai
     createElement('main', { className: 'monash-study-chat' },
       createElement('header', { className: 'monash-study-chat-header' },
         createElement('div', null,
-          createElement('div', { className: 'monash-study-kicker' }, 'Monash Study Agent'),
+          createElement('div', { className: 'monash-study-kicker' }, 'CourseLens'),
           createElement('h1', null, selectedCourse ?? 'Select a course'),
         ),
         createElement(Button, { size: 'sm', variant: 'outline', onClick: newChat, disabled: selectedCourse === undefined || running || creatingChat }, 'New Chat'),
@@ -340,7 +340,7 @@ function MonashStudyPage({ client }: { client: StudyClient } & PropsRuntime<'mai
         current === undefined ? createElement('div', { className: 'monash-study-empty' }, 'Choose a conversation or start a new chat.') : null,
         current?.messages.length === 0 ? createElement('div', { className: 'monash-study-empty' }, 'Ask a question about the selected course.') : null,
         current?.messages.map(message => createElement('article', { key: message.id, className: `monash-study-message ${message.role}` },
-          createElement('div', { className: 'monash-study-message-role' }, message.role === 'user' ? 'You' : 'Monash Study Agent'),
+          createElement('div', { className: 'monash-study-message-role' }, message.role === 'user' ? 'You' : 'CourseLens'),
           message.role === 'assistant'
             ? createElement(MarkdownText, { text: message.content, labels: MARKDOWN_LABELS })
             : createElement('div', { className: 'monash-study-user-text' }, message.content),

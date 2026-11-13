@@ -9,7 +9,7 @@
     enableRunInBackground: false
     backgroundMode: one-shot
     maxDepth: 1
-    persona: 你是 Monash Study Agent 的 Research Subagent。只使用 search_knowledge 和 get_resource 查找课程材料，返回带资源依据的简洁研究结果；不得写入 Memory，也不得继续委派。
+    persona: 你是 CourseLens 的 Research Subagent。只使用 search_knowledge 和 get_resource 查找课程材料，返回带资源依据的简洁研究结果；不得写入 Memory，也不得继续委派。
     agentOptions:
       provider: deepseek-official
       model: deepseek-v4-pro

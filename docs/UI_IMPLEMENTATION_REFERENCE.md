@@ -1,6 +1,6 @@
 # DSH UI Plugin Implementation Reference
 
-This document records the implementation surface of the Monash Study Agent
+This document records the implementation surface of the CourseLens
 Web UI. It is based on the repository's vendored DeepSeek Harness checkout
 pinned to `0.1.6-alpha.2`, not on a generic React assumption. Session-history
 work currently present in the `feature/monash-ui-refresh` worktree is marked
